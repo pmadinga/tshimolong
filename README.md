@@ -5,7 +5,8 @@ I am tasked to deliver a web application as my assignment to prove my skills as 
 A three page web app to collect survey data that can be presented.
 
 -  [ ] The web app must collect personal details, food preferences and time spending preferences
--  [ ] 
+-  [ ] Submit the survey data a database
+-  [ ] Query the stored data and manipulate it to the defined specifications of the results page
 
 ### Deliverables
 
