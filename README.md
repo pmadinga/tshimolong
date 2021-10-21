@@ -1,6 +1,11 @@
 # Tshimolong
 I am tasked to deliver a web application as my assignment to prove my skills as a both a web developer and a software developer
 
+### Important notes  
+`dark navy - #1F4863`  
+`orange - #FFAA2C`  
+Font - Arial  
+
 ## What is due
 A three page web app to collect survey data that can be presented.
 
@@ -35,3 +40,5 @@ The design does form a part of the tech stack I believe, none of the code delive
 ### Softwares to be used for the design
 - AdobeXD - Since the assignment already resembles wireframes, I will jump straight to the UI mockups
 - diagrams.net - a free wireframing tool with expanded tools to design software logic
+
+
