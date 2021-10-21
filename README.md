@@ -5,3 +5,4 @@ I am tasked to deliver a web application as my assignment to prove my skills as 
 - Landing Page
   The landing page must contain two links
 ![Screenshot](landing.jpg)
+![alt text](https://github.com/[pmadinga]/[tshimolong]/blob/[screenshots]/landing.jpg?raw=true)
