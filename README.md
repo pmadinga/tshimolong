@@ -51,7 +51,6 @@ The design does form a part of the tech stack I believe, none of the code delive
 - diagrams.net - a free wireframing tool with expanded tools to design software logic
 
 ### Here are my front end UI designs
-
- 
-
+**Landing page** 
+<img src="https://user-images.githubusercontent.com/42032229/138350197-c028ed43-07a1-48f0-838f-2e43a40ad4b6.jpg" alt="drawing" width="800"/>
 
