@@ -1,11 +1,19 @@
 # Tshimolong
-I am tasked to deliver a web application as my assignment to prove my skills as a both a web developer and a software developer
+I am tasked to deliver a web application as my assignment to prove my skills as both a web developer and a software developer
 
 ### Important notes  
 `dark navy - #1F4863`  
 `orange - #FFAA2C`  
 Font - Arial  
 
+## Table of contents
+1. [ Project overview ](#overview)
+2. [ Tech Stack ](#tech-stack)  
+    [ Design ](#design)  
+    [ Frontend development ](#frontend)  
+    [ Backend development ](#backend)  
+
+<a name="overview"></a>
 ## What is due
 A three page web app to collect survey data that can be presented.
 
@@ -31,6 +39,7 @@ A three page web app to collect survey data that can be presented.
   2. Percentages of food preferences in a **pie chart**
   3. Averages of time spending in a **bar chart**
 
+<a name="tech-stack"></a>
 ## Solution stack and why?
 
 ### Design
@@ -40,5 +49,9 @@ The design does form a part of the tech stack I believe, none of the code delive
 ### Softwares to be used for the design
 - AdobeXD - Since the assignment already resembles wireframes, I will jump straight to the UI mockups
 - diagrams.net - a free wireframing tool with expanded tools to design software logic
+
+### Here are my front end UI designs
+
+ 
 
 
