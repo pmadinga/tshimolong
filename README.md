@@ -23,16 +23,16 @@ A three page web app to collect survey data that can be presented.
 
 ## Deliverables
 
-- **Landing Page**  
+- **Landing Page**    
   The landing page must contain two links navigation link. A link to **Fill out the survey** and a link to **View the results**
   
-- **Survey page**  
+- **Survey page**    
   Here a user will be able to 
   1. Input their personal information, 
   2. Select food(s) of their choice
   3. Select their time spending preferences on a scale of 1 - **strongly agree** to 5 - **strongly disagree** (rating formatted)
 
-- **Results page**
+- **Results page**  
   The results from the survey will be available on the **results** page. From the submitted wireframes I think I can segment the results into 3 data views
   
   1. Statistical numbers in **plain text**
