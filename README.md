@@ -9,9 +9,9 @@ Font - Arial
 ## Table of contents
 1. [ Project overview ](#overview)
 2. [ Tech Stack ](#tech-stack)  
-    [ Design ](#design)  
-    [ Frontend development ](#frontend)  
-    [ Backend development ](#backend)  
+   - [ Design ](#design)  
+   - [ Frontend development ](#frontend)  
+   - [ Backend development ](#backend)  
 
 <a name="overview"></a>
 ## What is due
