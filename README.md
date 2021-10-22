@@ -47,7 +47,7 @@ A three page web app to collect survey data that can be presented.
 
 The design does form a part of the tech stack I believe, none of the code delivered will be possible without the **DESIGN**. Breaking it down I will have the UI mockup design, thereafter I will have the archetecture design.  
 
-**I must mention  that the proposed mockup designs from AdobeXD may differ from the final web app**
+**I must mention  that the proposed mockup designs from AdobeXD may differ from the final web app, that is the advangage of beign a designer and developer😉**
 
 ### Softwares to be used for the design
 - AdobeXD - Since the assignment already resembles wireframes, I will jump straight to the UI mockups
@@ -67,7 +67,7 @@ The design does form a part of the tech stack I believe, none of the code delive
 For Tshimolong Surveys, I will use the plain old `create-react-app`. My reason is to not over-engineer the application beyond my control. I support this decision because if it was a production platform and I had to scale the app, I can easily slap on Next.JS or even Nest.JS. I know it would be easy to scale up rather than down. 
 
 ### Libraries used
-For the purpose of saving data, I will not commit the node modules. If you would clone this repo would have to install the packages/libraries I used  
+For the purpose of saving data, I will not commit the node modules. If you would clone this repo, you would have to install the packages/libraries I used  
 
 To install the project dependencies. Run  
 
@@ -80,6 +80,6 @@ For transparency purposes I will also explicitly list the packages I used from t
 
 react-router-dom handles our DOM bindings - in english, it handle our page routing😉  
 
-`npm install react-bootstrap bootstrap@5.1.3`  
+`$ npm install react-bootstrap bootstrap@5.1.3`  
 
-react-bootstrap offers out of the box styling. I intend to make Tshimolong Survey to be responsive and bootstap offers a great grid design. Otherwise all of the styling will be overidden
+react-bootstrap offers out of the box styling. I intend to make Tshimolong Survey to be responsive and bootstap offers a great layout design. Otherwise all of the styling will be overidden
