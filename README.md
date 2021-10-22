@@ -73,13 +73,20 @@ To install the project dependencies. Run
 
 `$ npm install --save` - This command will install all of the packages in the package.json  
 
+  
 For transparency purposes I will also explicitly list the packages I used from the open-source [ npmjs.com ](http://npmjs.com)
 
-
+  
 `$ npm install --save react-router-dom`
 
 react-router-dom handles our DOM bindings - in english, it handle our page routing😉  
 
+  
 `$ npm install react-bootstrap bootstrap@5.1.3`  
 
-react-bootstrap offers out of the box styling. I intend to make Tshimolong Survey to be responsive and bootstap offers a great layout design. Otherwise all of the styling will be overidden
+react-bootstrap offers out of the box styling. I intend to make Tshimolong Survey to be responsive and bootstap offers a great layout design. Otherwise all of the styling will be overidden  
+
+  
+`$ npm install react-hook-form`  
+
+react-hook-form will handle the form data. The project's workflow will be React Hooks (...kind of) rather than the not so easy to understand Redux.
