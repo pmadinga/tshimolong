@@ -45,7 +45,9 @@ A three page web app to collect survey data that can be presented.
 <a name="design"></a>
 ## Design
 
-The design does form a part of the tech stack I believe, none of the code delivered will be possible without the **DESIGN**. Breaking it down I will have the UI mockup design, thereafter I will have the archetecture design. 
+The design does form a part of the tech stack I believe, none of the code delivered will be possible without the **DESIGN**. Breaking it down I will have the UI mockup design, thereafter I will have the archetecture design.  
+
+**I must mention  that the proposed mockup designs from AdobeXD may differ from the final web app**
 
 ### Softwares to be used for the design
 - AdobeXD - Since the assignment already resembles wireframes, I will jump straight to the UI mockups
