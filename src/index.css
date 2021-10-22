@@ -10,6 +10,7 @@
   background-color: #1F4863!important;
 
 }
+
 .navbar-brand{
   color: #fff!important;
   font-size: 1.8em!important;
@@ -141,4 +142,31 @@
 .form-check-input:focus{
   outline: none!important;
   box-shadow: none!important;
+}
+
+.table{
+  text-align: center;
+  border-right: #FFAA2C!important;
+}
+.table tbody tr td{
+  width: 50px;
+}
+
+.table tbody tr td:first-child{
+  width: 250px;
+}
+
+.form-radio-input::before{
+  transform: scale(1.2)!important;
+}
+
+.form.btn{
+  background-color: #1F4863!important;
+}
+.site-footer{
+  background-color: #1F4863!important;
+  color: #fff;
+  font-size: 1.6em;
+  text-align: center;
+  padding: 15px;
 }

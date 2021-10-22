@@ -1,10 +1,10 @@
-
-import { Container, Form, Button } from "react-bootstrap";
+// import bootstrap components
+import { Container, Form, Button, Table } from "react-bootstrap";
 
 
 const Survey = () => {
     return (
-        <div className="survey pt-4">
+        <div className="survey py-5">
             <Container>
                 <Form autoComplete="off" autoComplete="off">
                     <h1>Personal Details</h1>
@@ -69,6 +69,94 @@ const Survey = () => {
                         </div>
                     </div>
                     <h1 className="mt-4">On a scale of 1 to 5 indicate whether you strongly agree to strongly disagree</h1>
+                    <div className="rate-table">
+                        <Table striped bordered resource size="lg">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Strongly Agree</th>
+                                    <th>Agree</th>
+                                    <th>Neutral</th>
+                                    <th>Disagree</th>
+                                    <th>Strongly Disagree</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>I like to eat out</td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="eat-out"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="eat-out"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="eat-out"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="eat-out"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="eat-out"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>I like to watch movies</td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-movies"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-movies"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-movies"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-movies"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-movies"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>I like to watch TV</td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-tv"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-tv"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-tv"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-tv"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="watch-tv"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>I like to listen to the radio</td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="listen-to-radio"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="listen-to-radio"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="listen-to-radio"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="listen-to-radio"/>
+                                    </td>
+                                    <td>
+                                        <input type="radio" className="form-radio-input" name="listen-to-radio"/>
+                                    </td>
+                                </tr>
+                            </tbody> 
+                        </Table> 
+                    </div>
                     <Button type="submit">Submit</Button>
                 </Form>
             </Container> 
