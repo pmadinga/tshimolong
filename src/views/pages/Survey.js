@@ -1,12 +1,12 @@
 
-import { Container, Form, Button, InputGroup } from "react-bootstrap";
+import { Container, Form, Button } from "react-bootstrap";
 
 
 const Survey = () => {
     return (
         <div className="survey pt-4">
             <Container>
-                <Form >
+                <Form autoComplete="off" autoComplete="off">
                     <h1>Personal Details</h1>
                     
                     <div className="personal-details responses">
@@ -43,31 +43,32 @@ const Survey = () => {
                     </div>
                     <h1 className="mt-3">What is your favourite food? (You can choose more than 1 answer)</h1>
                     <div className="foods responses">
-                        <Form.Group className="option">
-                            <Form.Check/>
-                            <Form.Label>Pizza</Form.Label>
-                        </Form.Group>
-                        <Form.Group >
-                            <Form.Check/>
-                            <Form.Label>Pasta</Form.Label>
-                        </Form.Group>
-                        <Form.Group >
-                            <Form.Check/>
-                            <Form.Label>Pap and Wors</Form.Label>
-                        </Form.Group>
-                        <Form.Group >
-                            <Form.Check/>
-                            <Form.Label>Chicken Stir Fry</Form.Label>
-                        </Form.Group>
-                        <Form.Group >
-                            <Form.Check/>
-                            <Form.Label>Beef Stir Fry</Form.Label>
-                        </Form.Group>
-                        <Form.Group >
-                            <Form.Check/>
-                            <Form.Label>Other</Form.Label>
-                        </Form.Group>
+                        <div class="form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+                            <label class="form-check-label" for="exampleCheck1">Pizza</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+                            <label class="form-check-label" for="exampleCheck1">Pasta</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+                            <label class="form-check-label" for="exampleCheck1">Pap and Wors</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+                            <label class="form-check-label" for="exampleCheck1">Chicken Stir Fry</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+                            <label class="form-check-label" for="exampleCheck1">Beef Stir Fry</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+                            <label class="form-check-label" for="exampleCheck1">Other</label>
+                        </div>
                     </div>
+                    <h1 className="mt-4">On a scale of 1 to 5 indicate whether you strongly agree to strongly disagree</h1>
                     <Button type="submit">Submit</Button>
                 </Form>
             </Container> 
