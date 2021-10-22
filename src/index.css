@@ -160,8 +160,20 @@
   transform: scale(1.2)!important;
 }
 
-.form.btn{
-  background-color: #1F4863!important;
+.submit-form{
+  background-color: #FFAA2C!important;
+  border: none!important;
+  width: 200px;
+  height: 55px;
+  font-size: 2.0em!important;
+  padding: 0!important;
+  font-weight: 600!important;
+  transition: 0.3s ease-in-out!important;
+}
+.submit-form:hover{
+  transform: scale(1.05);
+  background-color: #FFAA2Cd0!important;
+
 }
 .site-footer{
   background-color: #1F4863!important;

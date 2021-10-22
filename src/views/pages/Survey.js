@@ -1,43 +1,47 @@
 // import bootstrap components
 import { Container, Form, Button, Table } from "react-bootstrap";
-
+import { useForm } from "react-hook-form";
 
 const Survey = () => {
+    const {register, handleSubmit, errors} = useForm();
+    const onSubmit = data =>{
+        console.log(data)
+    }
     return (
         <div className="survey py-5">
             <Container>
-                <Form autoComplete="off" autoComplete="off">
+                <Form onSubmit={handleSubmit(onSubmit)}>
                     <h1>Personal Details</h1>
                     
                     <div className="personal-details responses">
                         <Form.Group>
                             <Form.Label>
                                 Surname
-                                <Form.Control type="text" required  autoComplete="off" />
+                                <Form.Control type="text" required {...register("surname")}/>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 First Names
-                                <Form.Control type="text" required/>
+                                <Form.Control type="text" required {...register("firstnames")}/>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 Contact Number
-                                <Form.Control type="text" required/>
+                                <Form.Control type="text" required {...register("contact-number")}/>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 Date
-                                <Form.Control className="date-picker" type="date" required/>
+                                <Form.Control className="date-picker" type="date" required {...register("date")}/>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 Age
-                                <Form.Control className="age-input" type="number" min="5" max="120"/>
+                                <Form.Control className="age-input" type="number" min="5" max="120" {...register("age")}/>
                             </Form.Label>
                         </Form.Group>
                     </div>
@@ -85,7 +89,7 @@ const Survey = () => {
                                 <tr>
                                     <td>I like to eat out</td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" name="eat-out"/>
+                                        <input type="radio" className="form-radio-input" name="eat-out" required/>
                                     </td>
                                     <td>
                                         <input type="radio" className="form-radio-input" name="eat-out"/>
@@ -157,7 +161,10 @@ const Survey = () => {
                             </tbody> 
                         </Table> 
                     </div>
-                    <Button type="submit">Submit</Button>
+                    <div className="text-center mt-5">
+                        <Button type="submit" className="submit-form m-auto" >Submit</Button>
+                    </div>
+                    
                 </Form>
             </Container> 
         </div>
