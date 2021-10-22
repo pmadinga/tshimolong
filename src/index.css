@@ -12,7 +12,7 @@
 }
 .navbar-brand{
   color: #fff!important;
-  font-size: 1.6em!important;
+  font-size: 1.8em!important;
   text-transform: uppercase;
   font-weight: 600;
   text-align: center!important;
@@ -67,4 +67,29 @@
 }
 .col{
   margin: auto;
+}
+
+/* SURVEY PAGE */
+.survey h1{
+  font-size: 1.6em;
+  color:#1F4863;
+}
+.personal-details{
+  margin-left: 35px!important;
+}
+.personal-details .form-label{
+  color: #1f4863!important;
+  width: 300px;
+
+}
+.form-control{
+  border: 2px #FFAA2Cd0 solid!important;
+}
+.age-input{
+  width: 80px!important;
+}
+.age-input::-webkit-inner-spin-button,
+.age-input::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
 }
