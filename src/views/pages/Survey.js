@@ -1,11 +1,36 @@
 // import bootstrap components
 import { Container, Form, Button, Table } from "react-bootstrap";
+
+// import form handler
 import { useForm } from "react-hook-form";
+
+// firebase imports
+import {  collection, addDoc } from "firebase/firestore";
+import db from "../../controller/config";
+
+// 
+import { Redirect } from "react-router";
 
 const Survey = () => {
     const {register, handleSubmit, errors} = useForm();
     const onSubmit = data =>{
-        console.log(data)
+
+        if(errors !== " "){
+            console.log(data)
+            try{
+                
+                const docRef = addDoc(collection(db, "surveys"),{
+                    survey: data
+                });
+                console.log("Document witten with ID : ", docRef)
+                setTimeout(function() {
+                    <Redirect to="/home"/>
+                }, 2000);
+            }catch (err){
+                console.log(err)
+            } 
+        }
+       
     }
     return (
         <div className="survey py-5">
@@ -41,7 +66,7 @@ const Survey = () => {
                         <Form.Group>
                             <Form.Label>
                                 Age
-                                <Form.Control className="age-input" type="number" min="5" max="120" {...register("age")}/>
+                                <Form.Control className="age-input" type="number" min="5" max="120" {...register("age") ,type}/>
                             </Form.Label>
                         </Form.Group>
                     </div>
