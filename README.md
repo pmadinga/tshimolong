@@ -60,7 +60,11 @@ The design does form a part of the tech stack I believe, none of the code delive
 
 **Survey page**  
 
-<img src="https://user-images.githubusercontent.com/42032229/138361364-3f2dc54e-e07c-43ec-883f-2da51d4f690a.jpg" alt="drawing" width="800"/>
+<img src="https://user-images.githubusercontent.com/42032229/138361364-3f2dc54e-e07c-43ec-883f-2da51d4f690a.jpg" alt="drawing" width="800"/>  
+
+### A look at the overall architecture (in a nutshell)  
+
+<img src="https://user-images.githubusercontent.com/42032229/138550948-f3461526-376c-44f4-907a-b6913786a4bf.jpg" alt="drawing" width="800"/>
 
 
 ## Frontend development  
