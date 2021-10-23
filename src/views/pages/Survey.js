@@ -50,47 +50,34 @@ const Survey = () => {
 
                     {/* CHECKBOX FOOD RESPONSES */}
                     <div className="foods responses">
+
                         <div class="form-check">
-                            <input type="checkbox" className="form-check-input" 
-                                value="Pizza"
-                                {...register('foods')}
-                            />
+                            <input type="checkbox" className="form-check-input" value="Pizza" {...register('foods')}/>
                             <label class="form-check-label" for="exampleCheck1">Pizza</label>
                         </div>
+
                         <div class="form-check">
-                            <input type="checkbox" className="form-check-input" 
-                                value="Pasta"
-                                {...register('foods')}
-                            />
+                            <input type="checkbox" className="form-check-input" value="Pasta" {...register('foods')}/>
                             <label class="form-check-label" for="exampleCheck1">Pasta</label>
                         </div>
+
                         <div class="form-check">
-                            <input type="checkbox" className="form-check-input" 
-                                value="Pap and Wors"
-                                {...register('foods')}
-                            />
+                            <input type="checkbox" className="form-check-input" value="Pap and Wors"{...register('foods')}/>
                             <label class="form-check-label" for="exampleCheck1">Pap and Wors</label>
                         </div>
+
                         <div class="form-check">
-                            <input type="checkbox" className="form-check-input" 
-                                value="Chicken Stir Fry"
-                                {...register('foods')}
-                            />
+                            <input type="checkbox" className="form-check-input" value="Chicken Stir Fry" {...register('foods')}/>
                             <label class="form-check-label" for="exampleCheck1">Chicken Stir Fry</label>
                         </div>
+
                         <div class="form-check">
-                            <input type="checkbox" className="form-check-input" 
-                                value="Beef Stir Fry"
-                                {...register('foods')}
-                            />
+                            <input type="checkbox" className="form-check-input" value="Beef Stir Fry" {...register('foods')}/>
                             <label class="form-check-label" for="exampleCheck1">Beef Stir Fry</label>
                         </div>
+
                         <div class="form-check">
-                            <input type="checkbox" className="form-check-input" 
-                                value="Other"
-                                {...register('foods')}
-                                
-                            />
+                            <input type="checkbox" className="form-check-input" value="Other" {...register('foods')}/>
                             <label class="form-check-label" for="exampleCheck1">Other</label>
                         </div>
                         {}
@@ -112,6 +99,7 @@ const Survey = () => {
                                     <th>Strongly Disagree</th>
                                 </tr>
                             </thead>
+
                             <tbody>
                                 <tr >
                                     <td>I like to eat out</td>
@@ -132,6 +120,7 @@ const Survey = () => {
                                         <input type="radio" className="form-radio-input" value="5" {...register('eat-out')}/>
                                     </td>
                                 </tr>
+
                                 <tr>
                                     <td>I like to watch movies</td>
                                     <td>
@@ -150,6 +139,7 @@ const Survey = () => {
                                         <input type="radio" className="form-radio-input" value="5" {...register('watch-movies')}/>
                                     </td>
                                 </tr>
+
                                 <tr>
                                     <td>I like to watch TV</td>
                                     <td>
@@ -168,6 +158,7 @@ const Survey = () => {
                                         <input type="radio" className="form-radio-input" value="5" {...register('watch-tv')}/>
                                     </td>
                                 </tr>
+                                
                                 <tr>
                                     <td>I like to listen to the radio</td>
                                     <td>
