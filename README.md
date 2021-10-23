@@ -18,7 +18,7 @@ Font - Arial
 A three page web app to collect survey data that can be presented.
 
 -  [x]  The web app must collect personal details, food preferences and time spending preferences
--  [ ] Submit the survey data a database
+-  [x] Submit the survey data a database
 -  [ ] Query the stored data and manipulate it to the defined specifications of the results page
 
 ## Deliverables
@@ -62,6 +62,11 @@ The design does form a part of the tech stack I believe, none of the code delive
 
 <img src="https://user-images.githubusercontent.com/42032229/138361364-3f2dc54e-e07c-43ec-883f-2da51d4f690a.jpg" alt="drawing" width="800"/>  
 
+**Results page**  
+
+![Web 1920 – 3](https://user-images.githubusercontent.com/42032229/138574602-4203b3ca-8d19-4923-b344-3e9bf339c780.png)
+
+
 ### A look at the overall architecture (in a nutshell)  
 
 <img src="https://user-images.githubusercontent.com/42032229/138550948-f3461526-376c-44f4-907a-b6913786a4bf.jpg" alt="drawing" width="800"/>
@@ -94,3 +99,8 @@ react-bootstrap offers out of the box styling. I intend to make Tshimolong Surve
 `$ npm install react-hook-form`  
 
 react-hook-form will handle the form data. The project's workflow will be React Hooks (...kind of) rather than the not so easy to understand Redux.
+
+<a name="backend"></a>
+## Backend  
+
+My backend is hosted on **Firebase**. Essentially it is a Backend-as-a-Service, Slightly similar to a PaaS but with a numbered service it provides, it is enough to get a proof of concept into market. Also this is influenced by scaling. As mentioned above with using `create-react-app` then use NestJS if Tshimolong Surveys scaled up. I would apply the same approach with my backend and migrate it to **GCP** which already powers Firebase should my app scale up user volume.
