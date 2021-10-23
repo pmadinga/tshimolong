@@ -66,7 +66,7 @@ The design does form a part of the tech stack I believe, none of the code delive
 
 <img src="https://user-images.githubusercontent.com/42032229/138550948-f3461526-376c-44f4-907a-b6913786a4bf.jpg" alt="drawing" width="800"/>
 
-<a name="frontend"</a>
+<a name="frontend"></a>
 ## Frontend development  
 For Tshimolong Surveys, I will use the plain old `create-react-app`. My reason is to not over-engineer the application beyond my control. I support this decision because if it was a production platform and I had to scale the app, I can easily slap on Next.JS or even Nest.JS. I know it would be easy to scale up rather than down. 
 
