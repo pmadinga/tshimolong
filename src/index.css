@@ -75,6 +75,10 @@
   font-size: 1.6em;
   color:#1F4863;
 }
+.survey h2{
+  text-align: center;
+  color:#1F4863
+}
 .responses{
   margin-left: 35px!important;
 }

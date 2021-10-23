@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 
 // firebase imports
 import {  collection, addDoc } from "firebase/firestore";
-import db from "../../controller/config";
+import db from "../../controller/Config";
 
 // 
 import { Redirect } from "react-router";
@@ -35,6 +35,7 @@ const Survey = () => {
     return (
         <div className="survey py-5">
             <Container>
+                <h2 className="mb-3">Please fill in the form</h2>
                 <Form onSubmit={handleSubmit(onSubmit)}>
                     <h1>Personal Details</h1>
                     {/* PERSONAL DETAILS RESPONSES */}
@@ -66,7 +67,7 @@ const Survey = () => {
                         <Form.Group>
                             <Form.Label>
                                 Age
-                                <Form.Control className="age-input" type="number" min="5" max="120" {...register("age") ,type}/>
+                                <Form.Control className="age-input" type="number" min="5" max="120" {...register("age")}/>
                             </Form.Label>
                         </Form.Group>
                     </div>
