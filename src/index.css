@@ -75,7 +75,8 @@
   font-size: 1.6em;
   color:#1F4863;
 }
-.survey h2{
+.survey h2,
+.results h2{
   text-align: center;
   color:#1F4863
 }
@@ -179,6 +180,29 @@
   background-color: #FFAA2Cd0!important;
 
 }
+
+/* RESULTS */
+.results{
+  color: #1F4863!important;
+}
+.results .table{
+  text-align: start;
+  border-top: 0!important;
+  border-bottom: 2px solid #1F4863;
+  width: 60vh;
+  font-size: 1.3em;
+  color:#1F4863;
+}
+.results .table td:last-child{
+  border-left: #1F4863 2px solid;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  
+}
+
+/* Footer */
 .site-footer{
   background-color: #1F4863!important;
   color: #fff;
