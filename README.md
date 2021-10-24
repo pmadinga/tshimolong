@@ -96,9 +96,13 @@ react-router-dom handles our DOM bindings - in english, it handle our page routi
 react-bootstrap offers out of the box styling. I intend to make Tshimolong Survey to be responsive and bootstap offers a great layout design. Otherwise all of the styling will be overidden  
 
   
-`$ npm install react-hook-form`  
+`$ npm install react-hook-form`    
 
-react-hook-form will handle the form data. The project's workflow will be React Hooks (...kind of) rather than the not so easy to understand Redux.
+react-hook-form will handle the form data. The project's workflow will be React Hooks (...kind of) rather than the not so easy to understand Redux.  
+
+`$ npm i react-google-charts`  
+
+react-google-charts is a charts library that I intend to use for my data presentaton on the Results page
 
 <a name="backend"></a>
 ## Backend  
