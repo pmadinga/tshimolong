@@ -165,7 +165,7 @@
   transform: scale(1.2)!important;
 }
 
-.submit-form{
+.submit-form, .submit{
   background-color: #FFAA2C!important;
   border: none!important;
   width: 200px;
@@ -175,7 +175,7 @@
   font-weight: 600!important;
   transition: 0.3s ease-in-out!important;
 }
-.submit-form:hover{
+.submit-form, .submit:hover{
   transform: scale(1.05);
   background-color: #FFAA2Cd0!important;
 

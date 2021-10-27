@@ -24,10 +24,10 @@ const Survey = () => {
                 });
                 console.log("Document witten with ID : ", docRef)
                 setTimeout(function() {
-                    <Redirect to="/home"/>
+                    <Redirect to="/"/>
                 }, 2000);
-            }catch (err){
-                console.log(err)
+            }catch (error){
+                console.log(error)
             } 
         }
        
@@ -150,7 +150,7 @@ const Survey = () => {
                                 <tr>
                                     <td>I like to watch movies</td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="1" {...register('watch-movies')}/>
+                                        <input type="radio" className="form-radio-input" required value="1" {...register('watch-movies')}/>
                                     </td>
                                     <td>
                                         <input type="radio" className="form-radio-input" value="2" {...register('watch-movies')}/>
@@ -169,7 +169,7 @@ const Survey = () => {
                                 <tr>
                                     <td>I like to watch TV</td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="1" {...register('watch-tv')}/>
+                                        <input type="radio" className="form-radio-input" required value="1" {...register('watch-tv')}/>
                                     </td>
                                     <td>
                                         <input type="radio" className="form-radio-input" value="2" {...register('watch-tv')}/>
@@ -188,7 +188,7 @@ const Survey = () => {
                                 <tr>
                                     <td>I like to listen to the radio</td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="1" {...register('listen-to-radio')}/>
+                                        <input type="radio" className="form-radio-input" required value="1" {...register('listen-to-radio')}/>
                                     </td>
                                     <td>
                                         <input type="radio" className="form-radio-input" value="2" {...register('listen-to-radio')}/>
