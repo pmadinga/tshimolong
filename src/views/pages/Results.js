@@ -16,7 +16,7 @@ const Results = () =>{
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
     const [size, setSize] = useState();
-    const [ages, setAges] = useState([]);
+    // const [ages, setAges] = useState([]);
     const [ageAverage, setAverage] = useState();
     const [oldestParticipant, setOldestParticipant] = useState();
     const [youngestParticipant, setYoungestParticipant] = useState()
@@ -45,7 +45,7 @@ const Results = () =>{
                 })
                 // set states
                 setSize(surveyData.size);
-                setAges(ageArr)
+                // setAges(ageArr)
                 setAverage(() => {
                     let total = 0;
                     for(let i = 0; i < ageArr.length; i++){
@@ -54,12 +54,12 @@ const Results = () =>{
                     return (total / ageArr.length).toFixed(1);
                 })
                 setOldestParticipant(Math.max(...ageArr));
-                setYoungestParticipant(Math.min(...ageArr))
+                setYoungestParticipant(Math.min(...ageArr));
                 setFoods(() => {
                     let concatFoodArr = [];
                     for(let i = 0; i < foodsArr.length; i++){
                         concatFoodArr.push(...foodsArr[i])
-                        console.log(`test`)
+                       
                     }
                     return concatFoodArr;
                 })
@@ -75,10 +75,10 @@ const Results = () =>{
         getData()
     },[])
 
-    console.log(size)
-    console.log(ages)
-    console.log(ageAverage)
-    console.log(foods);
+    // console.log(size)
+    // // console.log(ages)
+    // console.log(ageAverage)
+    // console.log(foods);
     if(loading) return <Loader
         type="ThreeDots"
         color="#1F4863"
