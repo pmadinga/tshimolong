@@ -19,7 +19,7 @@ A three page web app to collect survey data that can be presented.
 
 -  [x]  The web app must collect personal details, food preferences and time spending preferences
 -  [x] Submit the survey data a database
--  [ ] Query the stored data and manipulate it to the defined specifications of the results page
+-  [x] Query the stored data and manipulate it to the defined specifications of the results page
 
 ## Deliverables
 
