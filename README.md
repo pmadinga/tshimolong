@@ -1,5 +1,10 @@
 # Tshimolong
-I am tasked to deliver a web application as my assignment to prove my skills as both a web developer and a software developer. For context I will call my web app **Tshimolong surverys**
+I am tasked to deliver a web application as my assignment to prove my skills as both a web developer and a software developer. For context I will call my web app **Tshimolong surverys**  
+
+# Project demo  
+[ Tshimolong Surveys - https://surveys-d147b.web.app/ ](https://surveys-d147b.web.app/)  
+
+---
 
 ### Important notes  
 `dark navy - #1F4863`  
@@ -111,4 +116,4 @@ react-loader-spiner is for a loader animation while loading data from the databa
 <a name="backend"></a>
 ## Backend  
 
-My backend is hosted on **Firebase**. Essentially it is a Backend-as-a-Service, Slightly similar to a PaaS but with a numbered service it provides, it is enough to get a proof of concept into market. Also this is influenced by scaling. As mentioned above with using `create-react-app` then use NestJS if Tshimolong Surveys scaled up. I would apply the same approach with my backend and migrate it to **GCP** which already powers Firebase should my app scale up user volume.
+My backend is hosted on **Firebase**. Essentially it is a Backend-as-a-Service, Slightly similar to a PaaS but with a numbered service it provides, it is enough to get a proof of concept into market. Also this is influenced by scaling. As mentioned above with using `create-react-app` then use NestJS if Tshimolong Surveys scaled up. I would apply the same approach with my backend and migrate it to **GCP** which already powers Firebase should my app scale up user volume.  
