@@ -116,7 +116,7 @@ const Results = () =>{
                             numPizza++;
                         }
                     }
-                    console.log(numPizza)
+                    // console.log(numPizza)
                     return numPizza
                 })
 

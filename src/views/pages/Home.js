@@ -2,10 +2,10 @@ import { Nav, Row, Col, Container } from "react-bootstrap";
 
 const Home = () =>{
     return(
-        <div className="home">
+        <div className="home m-auto">
             <Container className="center">
                 
-                <Row className="links">
+                <Row className="links m-auto">
                     <Col sm="12" md="6" lg="6" className="m-auto">
                         <Nav.Link href="/survey" className="fill-survey m-auto my-2">Fill out survey</Nav.Link>
                     </Col>
