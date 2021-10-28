@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 // import bootstrap
 import { Container, Table } from 'react-bootstrap'
 
-// import charts
-import Chart from "react-google-charts";
+// import loader
 import Loader from "react-loader-spinner";
 
 // firebase imports
@@ -66,32 +65,32 @@ const Results = () =>{
                 for(let i = 0; i < eatoutArr.length; i++){
                     concatEatoutArr.push(eatoutArr[i]);
                 } 
-                console.log(concatEatoutArr);
+                // console.log(concatEatoutArr);
 
-                // 
+                // append all watch movies rating into into one array
                 let concatWatchMovies = [];
                 for(let i = 0; i < watchMoviesArr.length; i++){
                     concatWatchMovies.push(watchMoviesArr[i]);
                 } 
-                console.log(concatWatchMovies);
+                // console.log(concatWatchMovies);
 
-                // 
+                // append all watch TV rating into into one array
                 let concatWatchTvArr = [];
                 for(let i = 0; i < watchTvArr.length; i++){
                     concatWatchTvArr.push(watchTvArr[i]);
                 } 
-                console.log(concatWatchTvArr);
+                // console.log(concatWatchTvArr);
 
-                // 
+                // append all listen to radion rating into into one array
                 let concatListenToRadioArr = [];
                 for(let i = 0; i < listenToRadioArr.length; i++){
                     concatListenToRadioArr.push(listenToRadioArr[i]);
                 } 
-                console.log(concatListenToRadioArr);
+                // console.log(concatListenToRadioArr);
 
                 // SETTING STATES
 
-                // set survey
+                // set survey size
                 setSize(surveyData.size);
                 // setAges(ageArr)
                 setAverage(() => {
@@ -147,7 +146,8 @@ const Results = () =>{
                     }
                     return numPapWors
                 })
-                // 
+
+                //accumulate rating  
                 setEatoutAvg(() =>{
                     return eatoutArr.reduce((a, b) => a + b, 0)
                 });
@@ -181,7 +181,7 @@ const Results = () =>{
     />
     if(error) return <p className>error :(</p>
     return(
-        <div className="results py-3">
+        <div className="results py-2">
             <Container>
     
                 <h2>Results</h2>
@@ -242,8 +242,9 @@ const Results = () =>{
                         </tr>
                     </Table>
                 </div>
+                
 
-                <Link to="/" className="view-survey nav-link m-auto my-5">OK</Link>
+                <Link to="/" className="view-survey nav-link m-auto my-2">OK</Link>
             </Container>
         </div>
     )

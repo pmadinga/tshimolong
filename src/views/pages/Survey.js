@@ -1,3 +1,4 @@
+import { useState } from "react";
 // import bootstrap components
 import { Container, Form, Button, Table } from "react-bootstrap";
 
@@ -13,6 +14,7 @@ import { Redirect } from "react-router";
 
 const Survey = () => {
     const {register, handleSubmit, errors} = useForm();
+    const [redirect, setRedirect] = useState(false)
     const onSubmit = data =>{
 
         if(errors !== " "){
@@ -23,15 +25,14 @@ const Survey = () => {
                     survey: data
                 });
                 console.log("Document witten with ID : ", docRef)
-                setTimeout(function() {
-                    <Redirect to="/"/>
-                }, 2000);
+                setRedirect(true)
             }catch (error){
                 console.log(error)
             } 
         }
        
     }
+    if(redirect) return <Redirect to="/"/>
     return (
         <div className="survey py-5">
             <Container>
@@ -118,11 +119,11 @@ const Survey = () => {
                             <thead>
                                 <tr>
                                     <th></th>
-                                    <th>Strongly Agree</th>
-                                    <th>Agree</th>
-                                    <th>Neutral</th>
-                                    <th>Disagree</th>
-                                    <th>Strongly Disagree</th>
+                                    <th>Strongly Agree (1)</th>
+                                    <th>Agree (2)</th>
+                                    <th>Neutral (3)</th>
+                                    <th>Disagree (4)</th>
+                                    <th>Strongly Disagree (5)</th>
                                 </tr>
                             </thead>
 
