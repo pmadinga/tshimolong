@@ -4,7 +4,9 @@ I am tasked to deliver a web application as my assignment to prove my skills as 
 # Project demo  
 [ Tshimolong Surveys - https://surveys-d147b.web.app/ ](https://surveys-d147b.web.app/)  
 
----
+---  
+
+
 
 ### Important notes  
 `dark navy - #1F4863`  
@@ -63,9 +65,13 @@ The design does form a part of the tech stack I believe, none of the code delive
 
 <img src="https://user-images.githubusercontent.com/42032229/138350197-c028ed43-07a1-48f0-838f-2e43a40ad4b6.jpg" alt="drawing" width="500"/>  
 
+___
+
 **Survey page**  
 
 <img src="https://user-images.githubusercontent.com/42032229/138361364-3f2dc54e-e07c-43ec-883f-2da51d4f690a.jpg" alt="drawing" width="500"/>  
+
+____
 
 **Results page**  
 First design  
@@ -75,6 +81,7 @@ Final design - this change comes with the realization that the percentages of fo
 
 <img src="https://user-images.githubusercontent.com/42032229/139334047-467e3efb-4627-4916-8382-ab4d45f36c4f.png" alt="drawing" width="500"/>   
 
+___
 
 ### A look at the overall architecture (in a nutshell)  
 
