@@ -26,9 +26,11 @@
 }
 
 /* Home body */
-
+.home{
+  margin: 0!important;
+  padding: 0!;
+}
 .links{
-  
   text-align: center;
 }
 
@@ -37,6 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;;
 }
 .nav-link{
   width: 300px;
