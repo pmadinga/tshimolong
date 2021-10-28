@@ -75,7 +75,8 @@
   font-size: 1.6em;
   color:#1F4863;
 }
-.survey h2{
+.survey h2,
+.results h2{
   text-align: center;
   color:#1F4863
 }
@@ -164,7 +165,7 @@
   transform: scale(1.2)!important;
 }
 
-.submit-form{
+.submit-form, .submit{
   background-color: #FFAA2C!important;
   border: none!important;
   width: 200px;
@@ -174,15 +175,59 @@
   font-weight: 600!important;
   transition: 0.3s ease-in-out!important;
 }
-.submit-form:hover{
+.submit-form, .submit:hover{
   transform: scale(1.05);
   background-color: #FFAA2Cd0!important;
 
 }
+
+/* RESULTS */
+.results{
+  color: #1F4863!important;
+}
+.results-table-data{
+  background-color: #f3f1f1;
+  width: 75vh;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: 0.35s ease-in-out!important;
+}
+.results-table-data:hover{
+  box-shadow: 0px 0px 12px 0px rgba(31,72,99,0.63);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(31, 72, 99, 0.2);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(31,72,99,0.63);
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.results .table{
+  margin: 0 auto;
+  text-align: start;
+  border-top: 0!important;
+  border-bottom: 2px solid rgb(31, 72, 99);
+  width: 70vh;
+  font-size: 1.3em;
+  color:#1F4863;
+  
+
+}
+.results .table td:last-child{
+  border-left: #1F4863 2px solid;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  width: 20%;
+}
+
+/* Footer */
 .site-footer{
   background-color: #1F4863!important;
   color: #fff;
   font-size: 1.6em;
   text-align: center;
   padding: 15px;
+}
+.scale-err{
+  transform: scale(3);
 }
