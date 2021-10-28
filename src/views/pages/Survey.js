@@ -45,30 +45,35 @@ const Survey = () => {
                             <Form.Label>
                                 Surname
                                 <Form.Control type="text" required {...register("surname")}/>
+                                <div className="line"></div>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 First Names
                                 <Form.Control type="text" required {...register("firstnames")}/>
+                                <div className="line"></div>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 Contact Number
                                 <Form.Control type="text" required {...register("contact-number")}/>
+                                <div className="line"></div>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 Date
                                 <Form.Control className="date-picker" type="date" required {...register("date")}/>
+                                <div className="line"></div>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 Age
                                 <Form.Control className="age-input" type="number" min="5" max="120" {...register("age")}/>
+                                <div className="line age-input"></div>
                             </Form.Label>
                         </Form.Group>
                     </div>
@@ -115,7 +120,7 @@ const Survey = () => {
 
                     {/* RATED DATA TABLE */}
                     <div className="rate-table">
-                        <Table striped bordered resource size="lg">
+                        <Table striped bordered responsive size="lg">
                             <thead>
                                 <tr>
                                     <th></th>

@@ -3,7 +3,7 @@ import { Nav, Row, Col, Container } from "react-bootstrap";
 const Home = () =>{
     return(
         <div className="home m-auto">
-            <Container className="center">
+            <Container className="center m-auto">
                 
                 <Row className="links m-auto">
                     <Col sm="12" md="6" lg="6" className="m-auto">

@@ -185,7 +185,7 @@ const Results = () =>{
             <Container>
     
                 <h2>Results</h2>
-                <div className="results-table-data">  
+                <div className="results-table-data home">  
                     <Table striped size="md" responsive>
                         <tr>
                             <td>Total number of surveys</td>
@@ -205,7 +205,7 @@ const Results = () =>{
                         </tr>
                     </Table>
                 </div>
-                <div className="results-table-data">  
+                <div className="results-table-data home">  
                     <Table striped size="md" responsive>
                         <tr>
                             <td>Percentage of people who like Pizza</td>
@@ -222,7 +222,7 @@ const Results = () =>{
                         
                     </Table>
                 </div>
-                <div className="results-table-data">  
+                <div className="results-table-data home">  
                     <Table striped size="md" responsive>
                         <tr>
                             <td>People like to eat out</td>
