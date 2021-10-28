@@ -24,7 +24,7 @@ A three page web app to collect survey data that can be presented.
 ## Deliverables
 
 - **Landing Page**    
-  The landing page must contain two links navigation link. A link to **Fill out the survey** and a link to **View the results**
+  The landing page must contain two navigationak links. A link to **Fill out the survey** and a link to **View the results**
   
 - **Survey page**    
   Here a user will be able to 
@@ -36,8 +36,8 @@ A three page web app to collect survey data that can be presented.
   The results from the survey will be available on the **results** page. From the submitted wireframes I think I can segment the results into 3 data views
   
   1. Statistical numbers in **plain text**
-  2. Percentages of food preferences in a **pie chart**
-  3. Averages of time spending in a **bar chart**
+  2. Percentages of food preferences in a **plain text**
+  3. Averages of time spending in a **plain text**
 
 <a name="tech-stack"></a>
 ## Solution stack and why?
@@ -60,14 +60,11 @@ The design does form a part of the tech stack I believe, none of the code delive
 
 **Survey page**  
 
-
-
 <img src="https://user-images.githubusercontent.com/42032229/138361364-3f2dc54e-e07c-43ec-883f-2da51d4f690a.jpg" alt="drawing" width="800"/>  
 
 **Results page**  
 
-![Web 1920 – 3](https://user-images.githubusercontent.com/42032229/138574602-4203b3ca-8d19-4923-b344-3e9bf339c780.png)
-
+<img src="https://user-images.githubusercontent.com/42032229/138574602-4203b3ca-8d19-4923-b344-3e9bf339c780.png" alt="drawing" width="800"/>  
 
 ### A look at the overall architecture (in a nutshell)  
 
