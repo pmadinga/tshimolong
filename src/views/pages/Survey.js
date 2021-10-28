@@ -130,77 +130,77 @@ const Survey = () => {
                                 <tr >
                                     <td>I like to eat out</td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" required value="1" {...register('eat-out')}/>
+                                        <input type="radio" className="form-radio-input" required value="1" {...register('eatout')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="2" {...register('eat-out')} />
+                                        <input type="radio" className="form-radio-input" value="2" {...register('eatout')} />
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="3" {...register('eat-out')}
+                                        <input type="radio" className="form-radio-input" value="3" {...register('eatout')}
                                         />
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="4" {...register('eat-out')}/>
+                                        <input type="radio" className="form-radio-input" value="4" {...register('eatout')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="5" {...register('eat-out')}/>
+                                        <input type="radio" className="form-radio-input" value="5" {...register('eatout')}/>
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>I like to watch movies</td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" required value="1" {...register('watch-movies')}/>
+                                        <input type="radio" className="form-radio-input" required value="1" {...register('watchmovies')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="2" {...register('watch-movies')}/>
+                                        <input type="radio" className="form-radio-input" value="2" {...register('watchmovies')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="3" {...register('watch-movies')}/>
+                                        <input type="radio" className="form-radio-input" value="3" {...register('watchmovies')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="4" {...register('watch-movies')}/>
+                                        <input type="radio" className="form-radio-input" value="4" {...register('watchmovies')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="5" {...register('watch-movies')}/>
+                                        <input type="radio" className="form-radio-input" value="5" {...register('watchmovies')}/>
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>I like to watch TV</td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" required value="1" {...register('watch-tv')}/>
+                                        <input type="radio" className="form-radio-input" required value="1" {...register('watchtv')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="2" {...register('watch-tv')}/>
+                                        <input type="radio" className="form-radio-input" value="2" {...register('watchtv')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="3" {...register('watch-tv')}/>
+                                        <input type="radio" className="form-radio-input" value="3" {...register('watchtv')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="4" {...register('watch-tv')}/>
+                                        <input type="radio" className="form-radio-input" value="4" {...register('watchtv')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="5" {...register('watch-tv')}/>
+                                        <input type="radio" className="form-radio-input" value="5" {...register('watchtv')}/>
                                     </td>
                                 </tr>
                                 
                                 <tr>
                                     <td>I like to listen to the radio</td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" required value="1" {...register('listen-to-radio')}/>
+                                        <input type="radio" className="form-radio-input" required value="1" {...register('listentoradio')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="2" {...register('listen-to-radio')}/>
+                                        <input type="radio" className="form-radio-input" value="2" {...register('listentoradio')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="3" {...register('listen-to-radio')}/>
+                                        <input type="radio" className="form-radio-input" value="3" {...register('listentoradio')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="4" {...register('listen-to-radio')}/>
+                                        <input type="radio" className="form-radio-input" value="4" {...register('listentoradio')}/>
                                     </td>
                                     <td>
-                                        <input type="radio" className="form-radio-input" value="5" {...register('listen-to-radio')}/>
+                                        <input type="radio" className="form-radio-input" value="5" {...register('listentoradio')}/>
                                     </td>
                                 </tr>
                             </tbody> 
