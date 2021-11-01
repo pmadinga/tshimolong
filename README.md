@@ -1,5 +1,12 @@
 # Tshimolong
-I am tasked to deliver a web application as my assignment to prove my skills as both a web developer and a software developer. For context I will call my web app **Tshimolong surverys**
+I am tasked to deliver a web application as my assignment to prove my skills as both a web developer and a software developer. For context I will call my web app **Tshimolong surverys**  
+
+# Project demo  
+[ Tshimolong Surveys - https://surveys-d147b.web.app/ ](https://surveys-d147b.web.app/)  
+
+---  
+
+
 
 ### Important notes  
 `dark navy - #1F4863`  
@@ -24,7 +31,7 @@ A three page web app to collect survey data that can be presented.
 ## Deliverables
 
 - **Landing Page**    
-  The landing page must contain two links navigation link. A link to **Fill out the survey** and a link to **View the results**
+  The landing page must contain two navigationak links. A link to **Fill out the survey** and a link to **View the results**
   
 - **Survey page**    
   Here a user will be able to 
@@ -36,8 +43,8 @@ A three page web app to collect survey data that can be presented.
   The results from the survey will be available on the **results** page. From the submitted wireframes I think I can segment the results into 3 data views
   
   1. Statistical numbers in **plain text**
-  2. Percentages of food preferences in a **pie chart**
-  3. Averages of time spending in a **bar chart**
+  2. Percentages of food preferences in a **plain text**
+  3. Averages of time spending in a **plain text**
 
 <a name="tech-stack"></a>
 ## Solution stack and why?
@@ -56,18 +63,25 @@ The design does form a part of the tech stack I believe, none of the code delive
 ### Here are my front end UI designs
 **Landing page**  
 
-<img src="https://user-images.githubusercontent.com/42032229/138350197-c028ed43-07a1-48f0-838f-2e43a40ad4b6.jpg" alt="drawing" width="800"/>  
+<img src="https://user-images.githubusercontent.com/42032229/138350197-c028ed43-07a1-48f0-838f-2e43a40ad4b6.jpg" alt="drawing" width="500"/>  
+
+___
 
 **Survey page**  
 
+<img src="https://user-images.githubusercontent.com/42032229/138361364-3f2dc54e-e07c-43ec-883f-2da51d4f690a.jpg" alt="drawing" width="500"/>  
 
-
-<img src="https://user-images.githubusercontent.com/42032229/138361364-3f2dc54e-e07c-43ec-883f-2da51d4f690a.jpg" alt="drawing" width="800"/>  
+____
 
 **Results page**  
+First design  
+<img src="https://user-images.githubusercontent.com/42032229/138574602-4203b3ca-8d19-4923-b344-3e9bf339c780.png" alt="drawing" width="200"/>  
 
-![Web 1920 – 3](https://user-images.githubusercontent.com/42032229/138574602-4203b3ca-8d19-4923-b344-3e9bf339c780.png)
+Final design - this change comes with the realization that the percentages of foods are not relative to each other  
 
+<img src="https://user-images.githubusercontent.com/42032229/139334047-467e3efb-4627-4916-8382-ab4d45f36c4f.png" alt="drawing" width="500"/>   
+
+___
 
 ### A look at the overall architecture (in a nutshell)  
 
@@ -102,11 +116,11 @@ react-bootstrap offers out of the box styling. I intend to make Tshimolong Surve
 
 react-hook-form will handle the form data. The project's workflow will be React Hooks (...kind of) rather than the not so easy to understand Redux.  
 
-`$ npm i react-google-charts`  
+`$ npm i react-loader-spinner`  
 
-react-google-charts is a charts library that I intend to use for my data presentaton on the Results page
+react-loader-spiner is for a loader animation while loading data from the database and performing the calculations
 
 <a name="backend"></a>
 ## Backend  
 
-My backend is hosted on **Firebase**. Essentially it is a Backend-as-a-Service, Slightly similar to a PaaS but with a numbered service it provides, it is enough to get a proof of concept into market. Also this is influenced by scaling. As mentioned above with using `create-react-app` then use NestJS if Tshimolong Surveys scaled up. I would apply the same approach with my backend and migrate it to **GCP** which already powers Firebase should my app scale up user volume.
+My backend is hosted on **Firebase**. Essentially it is a Backend-as-a-Service, Slightly similar to a PaaS but with a numbered service it provides, it is enough to get a proof of concept into market. Also this is influenced by scaling. As mentioned above with using `create-react-app` then use NestJS if Tshimolong Surveys scaled up. I would apply the same approach with my backend and migrate it to **GCP** which already powers Firebase should my app scale up user volume.  
