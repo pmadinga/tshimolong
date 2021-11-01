@@ -5,6 +5,9 @@
   -moz-osx-font-smoothing: grayscale;
   
 }
+.App{
+  height: 100vh;
+}
 
 /* SITE HEADER */
 .site-header{
@@ -72,9 +75,7 @@
 }
 
 /* SURVEY PAGE */
-.survey{
-  height:100vh;
-}
+
 .survey h1{
   font-size: 1.6em;
   color:#1F4863;

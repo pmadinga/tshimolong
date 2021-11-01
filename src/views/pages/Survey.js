@@ -212,7 +212,7 @@ const Survey = () => {
                             </tbody> 
                         </Table> 
                     </div>
-                    <div className="text-center ">
+                    <div className="text-center mt-4">
                         <Button type="submit" className="submit-form m-auto" >Submit</Button>
                     </div>
                     

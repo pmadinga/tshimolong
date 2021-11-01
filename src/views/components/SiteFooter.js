@@ -3,7 +3,9 @@ import { Navbar } from "react-bootstrap";
 const SiteFooter = () => {
     return(
         <div className="site-footer">
-                <span>&copy; 2021</span>
+                <span className="m-auto">&copy; 2021</span>
+
+            
         </div>
     )
 }

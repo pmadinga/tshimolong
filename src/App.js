@@ -25,7 +25,7 @@ function App() {
             <Results/> 
           </Route>
         </Switch>
-        {/* <SiteFooter/> */}
+        <SiteFooter/>
       </Router>
     </div>
   );
