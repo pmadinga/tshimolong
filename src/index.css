@@ -3,6 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 /* SITE HEADER */
@@ -196,6 +197,7 @@
   padding: 0!important;
   font-weight: 600!important;
   transition: 0.3s ease-in-out!important;
+  
 }
 .submit-form:hover{
   transform: scale(1.05);

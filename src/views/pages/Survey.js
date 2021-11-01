@@ -34,7 +34,7 @@ const Survey = () => {
     }
     if(redirect) return <Redirect to="/"/>
     return (
-        <div className="survey py-5">
+        <div className="survey py-5 mb-5">
             <Container>
                 <h2 className="mb-3">Please fill in the form</h2>
                 <Form onSubmit={handleSubmit(onSubmit)}>
@@ -212,7 +212,7 @@ const Survey = () => {
                             </tbody> 
                         </Table> 
                     </div>
-                    <div className="text-center mt-5">
+                    <div className="text-center ">
                         <Button type="submit" className="submit-form m-auto" >Submit</Button>
                     </div>
                     
