@@ -19,8 +19,7 @@ const Survey = () => {
 
         if(errors !== " "){
             console.log(data)
-            try{
-                
+            try{   
                 const docRef = addDoc(collection(db, "surveys"),{
                     survey: data
                 });
@@ -58,7 +57,7 @@ const Survey = () => {
                         <Form.Group>
                             <Form.Label>
                                 Contact Number
-                                <Form.Control type="text" required {...register("contact-number")}/>
+                                <Form.Control type="text" required maxLength="10" {...register("contact-number")}/>
                                 <div className="line"></div>
                             </Form.Label>
                         </Form.Group>

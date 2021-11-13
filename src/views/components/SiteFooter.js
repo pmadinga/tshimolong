@@ -1,4 +1,3 @@
-import { Navbar } from "react-bootstrap";
 
 const SiteFooter = () => {
     return(

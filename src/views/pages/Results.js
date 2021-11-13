@@ -13,19 +13,23 @@ import { Link } from 'react-router-dom';
 const Results = () =>{
 
     // hook states
+    // loading and error state
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    // ages state
     const [size, setSize] = useState();
     const [ageAverage, setAverage] = useState();
     const [oldestParticipant, setOldestParticipant] = useState();
     const [youngestParticipant, setYoungestParticipant] = useState();
-    const [pizzaPerc, setPizzaPerc] = useState();
-    const [pastaPerc, setPastaPerc] = useState();
-    const [papWors, setPapWors] = useState();
-    const [eatoutAvg, setEatoutAvg] = useState();
-    const [watchMoviesAvg, setWatchMoviesAvg] = useState();
-    const [watchTvAvg, setWatchTvAvg] = useState();
-    const [listenToRadioAvg, setListenToRadioAvg] = useState();
+    // favourite foods states
+    const [numPizza, setNumPizza] = useState();
+    const [numPasta, setNumPasta] = useState();
+    const [numPapWors, setNumPapWors] = useState();
+    // time spending preferences
+    const [numEatout, setNumEatout] = useState();
+    const [numWatchMovies, setNumWatchMovies] = useState();
+    const [numWatchTv, setNumWatchTv] = useState();
+    const [numListenToRadio, setNumListenToRadio] = useState();
 
     //queries
     useEffect(() => {
@@ -106,7 +110,7 @@ const Results = () =>{
                 setYoungestParticipant(Math.min(...ageArr));
                 
                 // set pizza state
-                setPizzaPerc(() => {
+                setNumPizza(() => {
                     if(concatFoodArr.length === 0) return 0
                     // pizza count
                     let numPizza = 0;
@@ -121,7 +125,7 @@ const Results = () =>{
                 })
 
                 // set pasta state
-                setPastaPerc(() => {
+                setNumPasta(() => {
                     // pasta count
                     let numPasta = 0;
                     // itterate to find people who want pasta
@@ -135,7 +139,7 @@ const Results = () =>{
                 });
 
                 // set pap and wors state
-                setPapWors(() =>{
+                setNumPapWors(() =>{
                     // pap and wors count
                     let numPapWors = 0;
                     // iterate to find people with pap and wors
@@ -148,16 +152,16 @@ const Results = () =>{
                 })
 
                 //accumulate rating  
-                setEatoutAvg(() =>{
+                setNumEatout(() =>{
                     return eatoutArr.reduce((a, b) => a + b, 0)
                 });
-                setWatchMoviesAvg(() => {
+                setNumWatchMovies(() => {
                     return watchMoviesArr.reduce((a, b) => a + b, 0)
                 })
-                setWatchTvAvg(() => {
+                setNumWatchTv(() => {
                     return watchTvArr.reduce((a, b) => a + b, 0)
                 })
-                setListenToRadioAvg(() => {
+                setNumListenToRadio(() => {
                     return listenToRadioArr.reduce((a, b) => a + b, 0)
                 })
 
@@ -171,7 +175,6 @@ const Results = () =>{
         }
         getData()
     },[])
-    
     if(loading) return <Loader
         type="ThreeDots"
         color="#1F4863"
@@ -181,7 +184,7 @@ const Results = () =>{
     />
     if(error) return <p className>error :(</p>
     return(
-        <div className="results py-2">
+        <div className="results pt-2 pb-4">
             <Container>
     
                 <h2>Results</h2>
@@ -209,15 +212,15 @@ const Results = () =>{
                     <Table striped size="md" responsive>
                         <tr>
                             <td>Percentage of people who like Pizza</td>
-                            <td>{(pizzaPerc / size * 100).toFixed(1)}%</td>
+                            <td>{(numPizza / size * 100).toFixed(1)}%</td>
                         </tr>
                         <tr>
                             <td>Percentage of people who like Pasta</td>
-                            <td>{(pastaPerc / size * 100).toFixed(1)}%</td>
+                            <td>{(numPasta / size * 100).toFixed(1)}%</td>
                         </tr>
                         <tr>
                             <td>Percentage of people who like Pap and Wors</td>
-                            <td>{(papWors / size * 100).toFixed(1)}%</td>
+                            <td>{(numPapWors / size * 100).toFixed(1)}%</td>
                         </tr>
                         
                     </Table>
@@ -226,25 +229,25 @@ const Results = () =>{
                     <Table striped size="md" responsive>
                         <tr>
                             <td>People like to eat out</td>
-                            <td>{parseFloat(eatoutAvg / size).toFixed(2)}</td>
+                            <td>{parseFloat(numEatout / size).toFixed(2)}</td>
                         </tr>
                         <tr>
                             <td>People like to watch movies:</td>
-                            <td>{parseFloat(watchMoviesAvg / size).toFixed(2)}</td>
+                            <td>{parseFloat(numWatchMovies / size).toFixed(2)}</td>
                         </tr>
                         <tr>
                             <td>People like to watch TV</td>
-                            <td>{parseFloat(watchTvAvg / size).toFixed(2)}</td>
+                            <td>{parseFloat(numWatchTv / size).toFixed(2)}</td>
                         </tr>
                         <tr>
                             <td>People like to listen to the radio</td>
-                            <td>{parseFloat(listenToRadioAvg / size).toFixed(2)}</td>
+                            <td>{parseFloat(numListenToRadio / size).toFixed(2)}</td>
                         </tr>
                     </Table>
                 </div>
                 
 
-                <Link to="/" className="view-survey nav-link m-auto my-2">OK</Link>
+                <Link to="/" className="view-survey nav-link m-auto my-4">OK</Link>
             </Container>
         </div>
     )
