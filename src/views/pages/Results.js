@@ -184,7 +184,7 @@ const Results = () =>{
     />
     if(error) return <p className>error :(</p>
     return(
-        <div className="results pt-2 pb-4">
+        <div className="results pt-2 pb-4 mb-5">
             <Container>
     
                 <h2>Results</h2>
