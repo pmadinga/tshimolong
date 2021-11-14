@@ -5,7 +5,7 @@ const SiteHeader = () =>{
         <div>
             <Navbar className="site-header">
                 <Container>
-                    <Navbar.Brand className="py-0 m-auto">Tshimolong Surveys</Navbar.Brand>
+                    <Navbar.Brand className="py-0 m-auto">Tshimologong Surveys</Navbar.Brand>
                 </Container>
             </Navbar>
         </div>

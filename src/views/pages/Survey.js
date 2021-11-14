@@ -29,6 +29,8 @@ const Survey = () => {
                 console.log(error);
                 console.log(errors);
             } 
+        }else{
+            console.log(errors)
         }
        
     }
@@ -45,31 +47,37 @@ const Survey = () => {
                         <Form.Group>
                             <Form.Label>
                                 Surname
-                                <Form.Control type="text" required {...register("surname", {pattern: /^[A-Za-z]+$/i})}/>
-                                
+                                <Form.Control type="text" {...register("surname", {pattern: /^[A-Za-z]+$/i, required: true})}/>
                                 <div className="line"></div>
-                                <span>No numerals or special characters allowed</span>
+                                <div className="display-errors">
+                                    {errors.surname && <span>Invalid surname</span>}
+                                </div>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 First Names
-                                <Form.Control type="text" required {...register("firstnames")}/>
+                                <Form.Control type="text" required {...register("firstnames", {pattern: /^[A-Za-z]+$/i, required: true})}/>
                                 <div className="line"></div>
+                                <div className="display-errors">
+                                    {errors.firstnames && <span>Invalid surname</span>}
+                                </div>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 Contact Number
-                                <Form.Control className={errors.contactNo ? "contact" : "contact"} type="number" required  {...register("contactNo", {pattern: /^[0-9]+$/i, minLength: 10, maxLength: 10 })}/>
-                                <div className={errors.contactNo ? "err-line" : "line"}></div>
-                                {errors.contactNo && <span>Please enter a correct phone number</span>}
+                                <Form.Control className="contact" type="number" {...register("contactNo", {pattern: /^[0-9]+$/i, required: true, maxLength: 10, minLength: 10})}/>
+                                <div className="line"></div>
+                                <div className="display-errors">
+                                    {errors.contactNo && <span>Invalid contact number</span>}
+                                </div>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
                                 Date
-                                <Form.Control className="date-picker" type="date" required {...register("date")}/>
+                                <Form.Control className="date-picker" type="date" {...register("date", {required: true})}/>
                                 <div className="line"></div>
                             </Form.Label>
                         </Form.Group>

@@ -219,6 +219,10 @@
   background-color: #FFAA2Cd0!important;
 
 }
+.display-errors{
+  height: 20px!important;
+  color: #ff3e3e!important
+}
 
 /* RESULTS */
 .results{
