@@ -13,7 +13,7 @@ import db from "../../controller/Config";
 import { Redirect } from "react-router";
 
 const Survey = () => {
-    const {register, handleSubmit, errors} = useForm();
+    const {register, handleSubmit, formState: {errors} } = useForm();
     const [redirect, setRedirect] = useState(false)
     const onSubmit = data =>{
 
@@ -26,12 +26,14 @@ const Survey = () => {
                 console.log("Document witten with ID : ", docRef)
                 setRedirect(true)
             }catch (error){
-                console.log(error)
+                console.log(error);
+                console.log(errors);
             } 
         }
        
     }
     if(redirect) return <Redirect to="/"/>
+    
     return (
         <div className="survey py-5 mb-5">
             <Container>
@@ -43,8 +45,10 @@ const Survey = () => {
                         <Form.Group>
                             <Form.Label>
                                 Surname
-                                <Form.Control type="text" required {...register("surname")}/>
+                                <Form.Control type="text" required {...register("surname", {pattern: /^[A-Za-z]+$/i})}/>
+                                
                                 <div className="line"></div>
+                                <span>No numerals or special characters allowed</span>
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
@@ -57,8 +61,9 @@ const Survey = () => {
                         <Form.Group>
                             <Form.Label>
                                 Contact Number
-                                <Form.Control type="text" required maxLength="10" {...register("contact-number")}/>
-                                <div className="line"></div>
+                                <Form.Control className={errors.contactNo ? "contact" : "contact"} type="number" required  {...register("contactNo", {pattern: /^[0-9]+$/i, minLength: 10, maxLength: 10 })}/>
+                                <div className={errors.contactNo ? "err-line" : "line"}></div>
+                                {errors.contactNo && <span>Please enter a correct phone number</span>}
                             </Form.Label>
                         </Form.Group>
                         <Form.Group>
@@ -83,8 +88,8 @@ const Survey = () => {
                     <div className="foods responses">
 
                         <div class="form-check">
-                            <input type="checkbox" className="form-check-input" value="Pizza" {...register('foods')}/>
-                            <label class="form-check-label" for="exampleCheck1">Pizza</label>
+                            
+                            <label class="form-check-label" for="exampleCheck1"><input type="checkbox" className="form-check-input" value="Pizza" {...register('foods')}/>Pizza</label>
                         </div>
 
                         <div class="form-check">
