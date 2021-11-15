@@ -1,5 +1,5 @@
-# Tshimolong
-I am tasked to deliver a web application as my assignment to prove my skills as both a web developer and a software developer. For context I will call my web app **Tshimolong surveys**  
+# Tshimologong
+I am tasked to deliver a web application as my assignment to prove my skills as both a web developer and a software developer. For context I will call my web app **Tshimologong surveys**  
 
 # Project demo  
 [ Tshimolong Surveys - https://surveys-d147b.web.app/ ](https://surveys-d147b.web.app/)  
